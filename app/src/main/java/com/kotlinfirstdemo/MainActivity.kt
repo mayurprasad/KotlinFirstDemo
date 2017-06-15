@@ -1,6 +1,7 @@
 package com.kotlinfirstdemo
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.app.AppCompatActivity
@@ -17,16 +18,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.constraint_layout)
-        //initialiseToolbar()
+        setContentView(R.layout.activity_main)
+        initialiseToolbar()
         activity = this
 
-//        fab = findViewById(R.id.fab) as FloatingActionButton
-//        fab.setOnClickListener { view ->
-//            //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-////                    .setAction("Action", null).show()
-//            startActivity(Intent(activity, LoginJavaActivity::class.java))
-//        }
+        fab = findViewById(R.id.fab) as FloatingActionButton
+        fab.setOnClickListener { view ->
+            startActivity(Intent(activity, LoginJavaActivity::class.java))
+        }
     }
 
     fun initialiseToolbar() {
