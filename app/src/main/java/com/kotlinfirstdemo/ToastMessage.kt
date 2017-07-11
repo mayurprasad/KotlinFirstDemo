@@ -11,7 +11,6 @@ import com.muddzdev.styleabletoastlibrary.StyleableToast
 
 object ToastMessage {
 
-
     fun toasterMsgShot(context: Context, msg: String) {
         StyleableToast.Builder(context)
                 .duration(Toast.LENGTH_SHORT)

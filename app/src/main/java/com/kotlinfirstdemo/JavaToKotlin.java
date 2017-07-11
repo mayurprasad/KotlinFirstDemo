@@ -10,12 +10,17 @@ import java.lang.annotation.Target;
  * Created by mayur.p on 6/13/2017.
  */
 
-public class Adapter {
-    public static String strStatic = "New";
-    Context context;
-    String[] strA = {"", ""};
+/*
+Use this class to convert your java code to kotlin
+For this go to Code click Convert Java File to Kotlin File.
+*/
 
-    public Adapter(Context context, String[] str) {
+public class JavaToKotlin {
+    public static String strStatic = "New";
+    private Context context;
+    private String[] strA = {"", ""};
+
+    public JavaToKotlin(Context context, String[] str) {
         this.context = context;
         ArrayAdapter<String> strArr = new ArrayAdapter<>(context, android.R.layout.simple_list_item_1, strA);
     }
