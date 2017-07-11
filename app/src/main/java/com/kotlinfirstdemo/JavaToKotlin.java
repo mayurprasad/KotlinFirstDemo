@@ -20,6 +20,7 @@ public class JavaToKotlin {
     private Context context;
     private String[] strA = {"", ""};
 
+
     public JavaToKotlin(Context context, String[] str) {
         this.context = context;
         ArrayAdapter<String> strArr = new ArrayAdapter<>(context, android.R.layout.simple_list_item_1, strA);
